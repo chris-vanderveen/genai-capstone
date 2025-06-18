@@ -1,17 +1,19 @@
 [project]
 name = "genai-capstone"
 version = "0.1.0"
-description = ""
+description = "Chatbot interface"
 authors = [
-    {name = "chris-vanderveen",email = "chrisvanderveen123@gmail.com"}
+    { name = "chris-vanderveen", email = "chrisvanderveen123@gmail.com" },
 ]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
+requires-python = ">=3.9,<4.0"
+dependencies = ["textual (>=3.4.0,<4.0.0)", "textual-dev (>=1.7.0,<2.0.0)", "google-genai (>=1.20.0,<2.0.0)"]
 
 [tool.poetry]
-packages = [{include = "genai_capstone", from = "src"}]
+packages = [{ include = "genai_capstone", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
 
 
 [build-system]
